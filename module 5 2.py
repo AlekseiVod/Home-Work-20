@@ -4,13 +4,9 @@ class House:
         self.number_of_floors = number_of_floors
 
     def __len__(self):
-        if self.number_of_floors < 1:
-            return 0
-        else:
             return self.number_of_floors
 
     def __str__(self):
-        if self.name:
             return f'Название {self.name} кол-во этажей {self.number_of_floors}'
 
     def go_to(self, new_floor):
